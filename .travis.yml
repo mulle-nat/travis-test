@@ -5,10 +5,8 @@ sudo: required
 before_install:
    - sudo mkdir -p /home/linuxbrew
    - sudo chown "$USER" /home/linuxbrew
-   - cd /home/linuxbrew
-   - HOME=/home/linuxbrew
-   - git clone https://github.com/Linuxbrew/brew.git ~/.linuxbrew
-   - PATH="$HOME/.linuxbrew/bin:$PATH"
+   - git clone https://github.com/Linuxbrew/brew.git /home/linuxbrew/.linuxbrew
+   - PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
    - brew update
    - brew install glibc
 
