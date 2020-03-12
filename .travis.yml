@@ -26,9 +26,6 @@ after_failure:
 before_deploy:
    - '[ ! -f .travis.d/before_deploy ] || .travis.d/before_deploy'
 
-deploy:
-   - '[ ! -f .travis.d/deploy ] || .travis.d/deploy'
-
 after_deploy:
    - '[ ! -f .travis.d/after_deploy ] || .travis.d/after_deploy'
 
