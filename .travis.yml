@@ -12,4 +12,3 @@ install:
 
 script:   
    - [ ! -f .travis.d/script ] || .travis.d/script
-
