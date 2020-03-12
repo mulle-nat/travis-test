@@ -2,8 +2,6 @@ language: c
 
 sudo: required
 
-# idea stolen from https://github.com/SwiftNIOExtras/swift-nio-irc/blob/develop/.travis.yml
-
 before_install:   
    - [ ! -f .travis.d/before_install ] || .travis.d/before_install
 
