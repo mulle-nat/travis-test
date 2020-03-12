@@ -3,11 +3,11 @@ language: c
 sudo: required
 
 before_install:
-   - [ ! -f .travis.d/before_install ] || .travis.d/before_install
+   - test -f .travis.d/before_install && .travis.d/before_install
 
 install:
-   - [ ! -f .travis.d/install ] || .travis.d/install
+   - test -f .travis.d/install && .travis.d/install
 
 script:
-   - [ ! -f .travis.d/script ] || .travis.d/script
+   - test -f .travis.d/script && .travis.d/script
 
